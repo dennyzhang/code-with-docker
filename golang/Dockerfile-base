@@ -10,3 +10,6 @@ RUN cd /root && \
     tar xzf cmake-3.9.2.tar.gz && \
     cd cmake-3.9.2 && \
     ./configure && make && make install
+
+# verify docker image
+RUN cmake --version | grep 3.9.2
