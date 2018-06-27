@@ -1,0 +1,12 @@
+##  Build docker image:
+##     docker build --no-cache -f Dockerfile_base -t denny/code-with-docker:golang-base --rm=true .
+##
+## Base Image: https://hub.docker.com/r/library/golang/
+FROM golang:1.10.3
+
+# Install cmake: https://help.directadmin.com/item.php?id=494
+RUN cd /root && \
+    wget http://files1.directadmin.com/services/custombuild/cmake-2.8.11.tar.gz && \
+    tar xzf cmake-2.8.11.tar.gz && \
+    cd cmake-2.8.11 && \
+    ./configure && make && make install

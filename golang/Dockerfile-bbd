@@ -1,0 +1,9 @@
+##  Build docker image:
+##     docker build --no-cache -f Dockerfile_base -t denny/code-with-docker:golang-bbd --rm=true .
+##
+## Base Image: https://hub.docker.com/r/library/golang/
+FROM denny/code-with-docker:golang-base
+
+# Install ginkgo: http://onsi.github.io/ginkgo/
+RUN go get github.com/onsi/ginkgo/ginkgo && \
+    go get github.com/onsi/gomega/...

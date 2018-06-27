@@ -6,12 +6,15 @@ Use docker to write code in different languages
 ## Golang
 
 ```
-export SRC_DIR="/Users/zdenny/Dropbox/private_data/work/vmware/go_test"
-export DOCKER_IMAGE="golang:onbuild"
+export SRC_DIR="/Users/zdenny/code/go_test"
+export DOCKER_IMAGE="denny/code-with-docker:golang-base"
 export CONTAINER_NAME="go-dev"
-docker run -t -d --privileged -v ${SRC_DIR}:/root/code -h $CONTAINER_NAME --name go-build --entrypoint=/bin/sh "$DOCKER_IMAGE"
+docker run -t -d -v ${SRC_DIR}:/root/code \
+       -h "$CONTAINER_NAME" --name "$CONTAINER_NAME" --entrypoint=/bin/sh "$DOCKER_IMAGE"
 
-docker exec -it $CONTAINER_NAME bash
+docker exec -it "$CONTAINER_NAME" sh
+
+# run code test
 go run ./test.go
 ```
 
