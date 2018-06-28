@@ -9,7 +9,7 @@
 ## Description :
 ## --
 ## Created : <2017-08-28>
-## Updated: Time-stamp: <2018-06-27 18:29:08>
+## Updated: Time-stamp: <2018-06-27 18:45:08>
 ##-------------------------------------------------------------------
 case $LANG in
     golang)
@@ -23,14 +23,13 @@ case $LANG in
 esac
 
 echo "Stop existing container($CONTAINER_NAME), if running."
+set -x
 docker stop "$CONTAINER_NAME"; docker rm "$CONTAINER_NAME" || true
 
-set -x
 docker run -t -d -v ${SRC_DIR}:/root/code \
        -h "$CONTAINER_NAME" --name "$CONTAINER_NAME" --entrypoint=/bin/sh -w /root/code "$DOCKER_IMAGE"
 set +x
 
-echo "Local source code dir: $SRC_DIR"
+echo "Local source code dir in host: $SRC_DIR; in container /root/code"
 echo "Login to container: docker exec -it $CONTAINER_NAME sh"
-echo "cd /root/code"
 ## File : start-container.sh ends
