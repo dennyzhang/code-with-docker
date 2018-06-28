@@ -9,7 +9,7 @@
 ## Description :
 ## --
 ## Created : <2017-08-28>
-## Updated: Time-stamp: <2018-06-27 17:23:46>
+## Updated: Time-stamp: <2018-06-27 17:41:04>
 ##-------------------------------------------------------------------
 case $LANG in
     golang)
@@ -18,7 +18,8 @@ case $LANG in
         [ -n "$CONTAINER_NAME" ] || CONTAINER_NAME="$LANG-dev"
         ;;
     *)
-        echo "Not supported language: $1"
+        echo "Supported languages: golang|python"
+        exit 1
 esac
 
 echo "Stop existing container($CONTAINER_NAME), if running."
