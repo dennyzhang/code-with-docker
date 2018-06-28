@@ -19,8 +19,9 @@ In below `https://goo.gl/ytazxG` points to [start-container.sh](start-container.
 ```
 LANG="golang" curl -L https://goo.gl/ytazxG | bash -e
 
+ls -lth
 # run code test
-go run ./test.go
+go run ./XXX.go
 ```
 
 - Install facilities to the docker image
