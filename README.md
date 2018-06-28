@@ -12,7 +12,7 @@ File me [tickets](https://github.com/DennyZhang/code-with-docker/issues) or star
 <a href="https://www.dennyzhang.com"><img align="right" width="185" height="37" src="https://raw.githubusercontent.com/USDevOps/mywechat-slack-group/master/images/dns_small.png"></a>
 
 # Run code developemnt
-`https://goo.gl/ytazxG` points to `https://raw.githubusercontent.com/dennyzhang/code-with-docker/master/start-container.sh`.
+In below `https://goo.gl/ytazxG` points to [start-container.sh](start-container.sh)
 
 ## Golang
 
