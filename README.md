@@ -17,6 +17,8 @@ In below `https://goo.gl/ytazxG` points to [start-container.sh](start-container.
 ## Golang
 
 ```
+mkdir -p ~/code/golang_test
+
 LANG="golang" curl -L https://goo.gl/ytazxG | bash -e
 
 ls -lth
@@ -29,6 +31,15 @@ go run ./XXX.go
 - Switch golang version
 
 ## Python
+```
+mkdir -p ~/code/python_test
+
+LANG="python" curl -L https://goo.gl/ytazxG | bash -e
+
+ls -lth
+# run code test
+python ./XXX.py
+```
 
 # License
 - Code is licensed under [MIT License](https://www.dennyzhang.com/wp-content/mit_license.txt).

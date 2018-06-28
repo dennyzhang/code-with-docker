@@ -1,0 +1,5 @@
+##  Build docker image:
+##     docker build --no-cache -f Dockerfile-base -t denny/code-with-docker:python-base --rm=true .
+##
+## Base Image: https://hub.docker.com/r/library/python/
+FROM python:3.6.6

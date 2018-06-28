@@ -9,13 +9,18 @@
 ## Description :
 ## --
 ## Created : <2017-08-28>
-## Updated: Time-stamp: <2018-06-27 18:45:08>
+## Updated: Time-stamp: <2018-06-27 20:36:11>
 ##-------------------------------------------------------------------
 case $LANG in
     golang)
-        [ -n "$SRC_DIR" ] || SRC_DIR="${HOME}/code/golang_test"
+        [ -n "$SRC_DIR" ] || SRC_DIR="${HOME}/code/${LANG}_test"
         [ -n "$DOCKER_IMAGE" ] || DOCKER_IMAGE="denny/code-with-docker:golang-base"
-        [ -n "$CONTAINER_NAME" ] || CONTAINER_NAME="$LANG-dev"
+        [ -n "$CONTAINER_NAME" ] || CONTAINER_NAME="${LANG}-dev"
+        ;;
+    python)
+        [ -n "$SRC_DIR" ] || SRC_DIR="${HOME}/code/${LANG}_test"
+        [ -n "$DOCKER_IMAGE" ] || DOCKER_IMAGE="denny/code-with-docker:python-base"
+        [ -n "$CONTAINER_NAME" ] || CONTAINER_NAME="${LANG}-dev"
         ;;
     *)
         echo "Supported languages: golang|python"
