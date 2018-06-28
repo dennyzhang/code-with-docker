@@ -17,7 +17,7 @@ File me [tickets](https://github.com/DennyZhang/code-with-docker/issues) or star
 
 ```
 LANG="golang"
-curl -L https://raw.githubusercontent.com/dennyzhang/code-with-docker/master/start-container.sh | sh
+curl -L https://raw.githubusercontent.com/dennyzhang/code-with-docker/master/start-container.sh | bash -e
 
 # run code test
 go run ./test.go
