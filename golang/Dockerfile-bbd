@@ -1,5 +1,5 @@
 ##  Build docker image:
-##     docker build --no-cache -f Dockerfile_base -t denny/code-with-docker:golang-bbd --rm=true .
+##     docker build --no-cache -f Dockerfile-bbd -t denny/code-with-docker:golang-bbd --rm=true .
 ##
 ## Base Image: https://hub.docker.com/r/library/golang/
 FROM denny/code-with-docker:golang-base
