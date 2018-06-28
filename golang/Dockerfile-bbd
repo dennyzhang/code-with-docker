@@ -1,7 +1,7 @@
 ##  Build docker image: Golang with BBD test
 ##     docker build --no-cache -f Dockerfile-bbd -t denny/code-with-docker:golang-bbd --rm=true .
 ##
-## Base Image: https://hub.docker.com/r/library/golang/
+## Base Image: https://github.com/dennyzhang/code-with-docker/blob/master/golang/Dockerfile-base
 FROM denny/code-with-docker:golang-base
 
 # Install ginkgo: http://onsi.github.io/ginkgo/
