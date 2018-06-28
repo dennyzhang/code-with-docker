@@ -16,7 +16,7 @@ File me [tickets](https://github.com/DennyZhang/code-with-docker/issues) or star
 ## Golang
 
 ```
-export SRC_DIR="/Users/zdenny/code/go_test"
+export SRC_DIR="${HOME}/code/go_test"
 export DOCKER_IMAGE="denny/code-with-docker:golang-base"
 export CONTAINER_NAME="go-dev"
 docker run -t -d -v ${SRC_DIR}:/root/code \
@@ -28,9 +28,9 @@ docker exec -it "$CONTAINER_NAME" sh
 go run ./test.go
 ```
 
-Install facilities to the docker image
+- Install facilities to the docker image
 
-Switch golang version
+- Switch golang version
 
 ## Python
 
