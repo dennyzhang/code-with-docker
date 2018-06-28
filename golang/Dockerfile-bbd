@@ -1,4 +1,4 @@
-##  Build docker image:
+##  Build docker image: Golang with BBD test
 ##     docker build --no-cache -f Dockerfile-bbd -t denny/code-with-docker:golang-bbd --rm=true .
 ##
 ## Base Image: https://hub.docker.com/r/library/golang/
