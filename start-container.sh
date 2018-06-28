@@ -9,13 +9,13 @@
 ## Description :
 ## --
 ## Created : <2017-08-28>
-## Updated: Time-stamp: <2018-06-27 21:17:37>
+## Updated: Time-stamp: <2018-06-27 21:57:49>
 ##-------------------------------------------------------------------
 case $LANG_DEV in
     golang)
         [ -n "$SRC_DIR" ] || SRC_DIR="${HOME}/code/${LANG_DEV}_test"
         [ -n "$DOCKER_IMAGE" ] || DOCKER_IMAGE="denny/code-with-docker:golang-base"
-        [ -n "$CONTAINER_NAME" ] || CONTAINER_NAME="${LANG}-dev"
+        [ -n "$CONTAINER_NAME" ] || CONTAINER_NAME="${LANG_DEV}-dev"
         ;;
     python)
         [ -n "$SRC_DIR" ] || SRC_DIR="${HOME}/code/${LANG_DEV}_test"
