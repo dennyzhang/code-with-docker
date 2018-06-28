@@ -9,9 +9,9 @@
 ## Description :
 ## --
 ## Created : <2017-08-28>
-## Updated: Time-stamp: <2018-06-27 20:36:11>
+## Updated: Time-stamp: <2018-06-27 20:45:29>
 ##-------------------------------------------------------------------
-case $LANG in
+case $LANG_DEV in
     golang)
         [ -n "$SRC_DIR" ] || SRC_DIR="${HOME}/code/${LANG}_test"
         [ -n "$DOCKER_IMAGE" ] || DOCKER_IMAGE="denny/code-with-docker:golang-base"

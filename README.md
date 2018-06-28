@@ -19,7 +19,7 @@ In below `https://goo.gl/ytazxG` points to [start-container.sh](start-container.
 ```
 mkdir -p ~/code/golang_test
 
-LANG="golang" curl -L https://goo.gl/ytazxG | bash -e
+LANG_DEV="golang" curl -L https://goo.gl/ytazxG | bash -e
 
 ls -lth
 # run code test
@@ -34,7 +34,7 @@ go run ./XXX.go
 ```
 mkdir -p ~/code/python_test
 
-LANG="python" curl -L https://goo.gl/ytazxG | bash -e
+LANG_DEV="python" curl -L https://goo.gl/ytazxG | bash -e
 
 ls -lth
 # run code test
